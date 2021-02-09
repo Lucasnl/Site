@@ -1,1 +1,576 @@
-<h1>hello</h1>
+<html>
+
+<head>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> 
+
+   
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+	  
+	  
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script type="text/javascript">
+
+window.scroll({
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth' <pre rel="HTML"><code markup="tt" class="language-markup">
+});
+
+// Scroll certain amounts from current position 
+window.scrollBy({ 
+  top: 100, // could be negative value
+  left: 0, 
+  behavior: 'smooth' 
+});
+
+// Scroll to a certain element
+document.querySelector('#').scrollIntoView({ 
+  behavior: 'smooth' 
+});
+
+
+$(function(){  // $(document).ready shorthand
+  $('.tit').fadeIn('slow');
+});
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+<script type="text/javascript">
+
+$(function(){  // $(document).ready shorthand
+  $('.tit').fadeIn('slow');
+});
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.efeito').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>
+<style>
+.design p {
+	    font-size: 1.15rem;
+
+	
+}
+.showcase .showcase-text {
+  padding: 3rem;
+}
+.no-gutters{
+	background-color:#f8f9fa!important;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+
+#meuemail{
+	margin-top:3px;
+}
+
+#espaco{
+;
+
+margin-top:70px;
+	padding:30px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.efeito{
+	
+	    opacity:0;
+
+}
+
+header.masthead .intro-text {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+header.masthead .intro-text .intro-lead-in {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 25px;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color:white;}
+
+header.masthead .intro-text .intro-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color:white;}
+
+@media (min-width: 768px) {
+  header.masthead .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  header.masthead .intro-text .intro-lead-in {
+	  color:white;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+   color:white; }
+  header.masthead .intro-text .intro-heading {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color:white;
+  }
+  
+
+   
+
+}
+   header.masthead{
+	   text-align:center;
+   }
+   
+#mainNav {
+  background-color: #212529;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #fed136;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-brand {
+  color: #fed136;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #fec503;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #fed136;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+   z-index: 1030;}
+   
+   footer {
+  padding: 25px 0;
+  text-align: center;background-color: #ce1b1bb0
+}
+
+footer span.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+footer ul.quicklinks {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: white;
+      padding: 13px;
+
+}
+
+#linkedin{
+ background-color: rgb(124, 124, 124);
+
+}
+#facebook{
+	    background-color: rgb(124, 124, 124);
+
+}
+#twitter{
+    background-color: rgb(124, 124, 124);
+
+}
+
+#linkedin:hover
+{
+
+	
+	background-color:#0077b5;
+}
+
+#facebook:hover{
+	background-color:#3b5998;
+}
+#twitter:hover{
+	background-color:#00aced;
+}
+.fab{
+color:white !important;
+}
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+line-height: 1;
+    color: #bf3f3f;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: -150px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn img{
+	width:15%
+	
+}
+#myBtn:hover {
+
+}
+
+
+
+
+
+</style>
+
+ <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</head>
+
+<body>
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+<button class="efeito" onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://www.directlink.coop/img/icons/110912-font-awesome/png/chevron-arrow-up.png"></button>
+
+	    <!-- 11 - contained in center example -->
+
+	  <nav class="navbar navbar-expand-lg navbar-dark fixed-top  " id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="fa fa-envelope"></span>  lucasnatallopes@gmail.com</a>
+        <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger hvr-underline-from-center" href="#services">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger hvr-underline-from-center" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger hvr-underline-from-center" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger hvr-underline-from-center" href="#team">Contato</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+<div id="FundoHeader">
+     
+<header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Bem Vindo!</div>
+          <div class="intro-heading text-uppercase">Criação de Sites</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#design">Ver mais</a>
+        </div>
+      </div>
+	  </div>
+    </header>
+    
+    
+<br><br><br><br>
+
+
+<Section>
+
+
+<div id="design" class="Design">
+
+<h1 class="tit">  Design Responsivo </h1> <br><br>
+<div class="container">
+ <div class="row">
+
+
+    <div class="col-sm">
+	    <div class="efeito">
+
+	
+<img src="http://obscureproblemsandgotchas.com/wp-content/uploads/2018/06/bootstrap-stack-e1530246058846.png" width="90%"/>
+    </div></div>
+	<div class="col-sm">
+	
+	<div class="efeito">
+      <img  src="http://www.myiconfinder.com/uploads/iconsets/256-256-3bbe05e6c2fb231b5d1e908351c47401.png" width="70%"/>
+    </div></div>
+    <div class="col-sm">
+	<div class="efeito">
+<img src="https://png.pngtree.com/svg/20170719/javascript_633988.png" width="70%"/>
+    </div></div>
+ 
+
+   <div class="col-sm">
+   <div class="efeito">
+<img  src="http://icons-for-free.com/free-icons/png/512/393273.png" width="70%"/> <br><br>
+    </div></div>
+    <div class="col-sm">
+	<div class="efeito">
+      <img src="http://icons-for-free.com/icon/download-css_html_html5_icon-498356.png" width="70%"/><br> <br>
+    </div></div>
+    <div class="col-sm">
+	<div class="efeito">
+<img  src="https://cdn1.iconfinder.com/data/icons/logos-3/304/codeigniter-icon-512.png" width="60%"/>
+    </div></div>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+</div><br><br>
+<p class="design">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet nunc tempus, gravida lacus eget, porta ante. Duis nibh ex, cursus vitae massa quis, blandit varius lorem. Integer posuere porta metus. Fusce a risus malesuada, euismod mi ac, tincidunt nulla. Aenean nibh nulla, condimentum a nisi et, scelerisque aliquet nibh. Vestibulum sagittis nunc quam, et malesuada leo varius quis. Proin et luctus ante. In placerat ante quam, vitae mattis arcu semper sit amet.
+
+Morbi convallis vitae dolor sit amet sollicitudin. Nam tincidunt consequat sem in scelerisque. Praesent lacinia sed tellus non imperdiet. Nam dictum nisl id mi mattis, sit amet imperdiet est finibus. Nunc molestie tortor nulla, at finibus justo bibendum faucibus. Donec interdum id eros non ultrices. Praesent condimentum mi et est volutpat, at dignissim nibh molestie. Morbi aliquet diam ante, ac feugiat justo faucibus eget. Suspendisse potenti. Nullam congue, lorem eget semper faucibus, libero neque finibus urna, cursus posuere odio leo ut lectus. Curabitur pulvinar vulputate nunc, vel euismod lectus posuere sit amet.</p>
+</div>
+</Section>
+
+   
+   <section>
+   <div id="espaco"></div>
+   </section>
+
+
+ <!-- Image Showcases -->
+    <section class="showcase">
+      <div id="sobre" class="container-fluid p-0">
+ 
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('http://hdqwalls.com/wallpapers/php-hd.jpg');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Sobre</h2>
+            <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim eu turpis egestas pretium aenean pharetra. Ut lectus arcu bibendum at varius vel pharetra vel turpis. Turpis nunc eget lorem dolor. Sagittis aliquam malesuada bibendum arcu vitae. Iaculis at erat pellentesque adipiscing. Tempus egestas sed sed risus pretium quam vulputate. Arcu felis bibendum ut tristique et egestas quis. Viverra accumsan in nisl nisi scelerisque eu ultrices. In dictum non consectetur a erat nam. Ipsum consequat nisl vel pretium lectus.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+<div class="bg-contact2" style="background-image: url('assets/uploads/images/bg-01.jpg');">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form">
+					<span class="contact2-form-title">
+					Contato
+					</span>
+
+					<div class="wrap-input2 validate-input" data-validate="Nome não pode ser em branco">
+						<input class="input2" type="text" name="name">
+						<span class="focus-input2" data-placeholder="Nome"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Digite um email valido: ex@abc.xyz">
+						<input class="input2" type="text" name="email">
+						<span class="focus-input2" data-placeholder="Email"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Mensagem não pode ser em branco">
+						<textarea class="input2" name="message"></textarea>
+						<span class="focus-input2" data-placeholder="Mensagem"></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Enviar
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+<script>
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 50) {
+        $('.navbar').addClass('navbar-shrink');
+    } else {
+        $('.navbar').removeClass('navbar-shrink');
+    }
+});
+
+</script>
+  
+
+</body>
+
+
+
+</html>
